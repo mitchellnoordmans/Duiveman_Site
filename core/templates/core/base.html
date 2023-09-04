@@ -7,27 +7,27 @@
     <!-- Add your CSS and JavaScript links here -->
 </head>
 
-
+{% block content%} BASE {% endblock %}
 <body>
     <header>
         <a href="/" class="logo">LOGO PLACEHOLDER</a>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <li class="dropdown">
-                    <a href="diensten/">Diensten</a>
+                    <a href="{% url 'diensten' %}">Diensten</a>
                     <div class="dropdown-content">
-                        <a href="spuitwerk/">Spuitwerk</a>
-                        <a href="stucwerk/">Stucwerk</a>
-                        <a href="sierpleister/">Sierpleister</a>
-                        <a href="lijstwerk/">Lijstwerk</a>
-                        <a href="sauzen/">Sauzen</a>
+                        <a href="{% url 'spuitwerk' %}">Spuitwerk</a>
+                        <a href="{% url 'stucwerk' %}">Stucwerk</a>
+                        <a href="{% url 'sierpleister' %}">Sierpleister</a>
+                        <a href="{% url 'lijstwerk' %}">Lijstwerk</a>
+                        <a href="{% url 'sauzen' %}">Sauzen</a>
                     </div>
                 </li>
-                <li><a href="offerte/">Offerte</a></li>
-                <li><a href="contact/">Contact</a></li>
+                <li><a href="{% url 'offerte' %}">Offerte</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
-        </nav>
+        </nav>        
     </header>
 
     <!-- Add your footer here -->
@@ -38,8 +38,8 @@
             </a>
         </div>
         <div class="footer-links">
-            <a href="privacy-verklaring/">Privacy Verklaring</a>
-            <a href="disclaimer/">Disclaimer</a>
+            <a href="url 'privacy_verklaring'">Privacy Verklaring</a>
+            <a href="url 'disclaimer'">Disclaimer</a>
         </div>
     </footer>
     

@@ -1,1 +1,18 @@
-{% extends base.html %}
+{% extends 'base.html' %}
+
+{% block title %}Offerte Aanvragen{% endblock %}
+
+{% block content %}
+<main style="display: flex; justify-content: center; align-items: center; max-width: 800px; margin: 0 auto;">
+    <div style="text-align: center;">
+        <h4>Vraag vandaag nog vrijblijvend een offerte aan en ervaar zelf de meerwaarde van Duiveman Wand en Plafondspuitbedrijf BV.</h4>
+
+        <!-- Render the OfferteForm here -->
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Verstuur Offerte</button>
+        </form>
+    </div>
+</main>
+{% endblock %}

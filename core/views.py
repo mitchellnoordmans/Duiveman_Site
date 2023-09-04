@@ -21,5 +21,27 @@ def offerte(request):
 def diensten(request):
     return render(request, 'diensten.html')
 
+def spuitwerk(request):
+    return render(request, 'spuitwerk.html')
 
+def stucwerk(request):
+    return render(request, 'stucwerk.html')
+
+def sierpleister(request):
+    return render(request, 'sierpleister.html')
+
+def sauzen(request):
+    return render(request, 'sauzen.html')
+
+def lijstwerk(request):
+    return render(request, 'lijstwerk.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def disclaimer(request):
+    return render(request, 'disclaimer.html')
+
+def privacy_verklaring(request):
+    return render(request, 'privacy_verklaring.html')
 
