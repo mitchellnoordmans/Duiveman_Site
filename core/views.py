@@ -45,3 +45,11 @@ def disclaimer(request):
 def privacy_verklaring(request):
     return render(request, 'privacy_verklaring.html')
 
+def afbouw(request):
+    return render(request, 'afbouw.html')
+
+def muurschildering(request):
+    return render(request, 'muurschildering.html')
+
+def overige_diensten(request):
+    return render(request, 'overige_diensten.html')

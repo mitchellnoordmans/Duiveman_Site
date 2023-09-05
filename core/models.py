@@ -26,9 +26,9 @@ class StucProject(models.Model):
     def __str__(self):
         return self.title
 
-class PaintingProject(models.Model):
+class MuurschilderingProject(models.Model):
     title = models.CharField(max_length=100)
-    image_url = models.ImageField(upload_to='painting/')
+    image_url = models.ImageField(upload_to='muurschildering/')
 
     def __str__(self):
         return self.title

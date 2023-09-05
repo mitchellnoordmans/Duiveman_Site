@@ -20,14 +20,22 @@
                         <a href="{% url 'spuitwerk' %}">Spuitwerk</a>
                         <a href="{% url 'stucwerk' %}">Stucwerk</a>
                         <a href="{% url 'sierpleister' %}">Sierpleister</a>
-                        <a href="{% url 'lijstwerk' %}">Lijstwerk</a>
                         <a href="{% url 'sauzen' %}">Sauzen</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="{% url 'overige_diensten' %}">Overige Diensten</a>
+                    <div class="dropdown-content">
+                        <a href="{% url 'afbouw' %}">Afbouw van uw woning</a>
+                        <a href="{% url 'muurschildering' %}">Muurschildering</a>
+                        <a href="{% url 'lijstwerk' %}">Sierlijsten</a>
                     </div>
                 </li>
                 <li><a href="{% url 'offerte' %}">Offerte</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
-        </nav>        
+        </nav>
+               
     </header>
 
     <!-- Add your footer here -->
@@ -38,8 +46,8 @@
             </a>
         </div>
         <div class="footer-links">
-            <a href="url 'privacy_verklaring'">Privacy Verklaring</a>
-            <a href="url 'disclaimer'">Disclaimer</a>
+            <a href="{% url 'privacy_verklaring' %}">Privacy Verklaring</a>
+            <a href="{% url 'disclaimer' %}">Disclaimer</a>
         </div>
     </footer>
     
