@@ -42,8 +42,8 @@ def contact(request):
 def disclaimer(request):
     return render(request, 'disclaimer.html')
 
-def privacy_verklaring(request):
-    return render(request, 'privacy_verklaring.html')
+def privacy(request):
+    return render(request, 'privacy.html')
 
 def afbouw(request):
     return render(request, 'afbouw.html')

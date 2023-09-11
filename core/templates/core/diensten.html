@@ -1,27 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Al onze diensten staan in teken van kwaliteit en transparantheid.</h1>
-    <p>Zo weet u van te voren precies waar u aan toe bent en komt u achteraf niet voor onaangename verrassingen te staan.</p>
+    <main style="display: flex; justify-content: center; align-items: center; max-width: 800px; margin: 0 auto;">
+        <div style="text-align: center;">
+            <h3>Al onze diensten staan in teken van kwaliteit en transparantheid.</h3>
+            <p>Zo weet u van te voren precies waar u aan toe bent en komt u achteraf niet voor onaangename verrassingen te staan.</p>
 
-    <h2>Enkele impressies van een door ons geschilderde kinderkamer:</h2>
-    <!-- Add your image tags or content for the images here -->
+            <h3>Enkele impressies van een door ons geschilderde kinderkamer:</h3>
+            <!-- Add your image tags or content for the images here -->
 
-    <p>Indien u contact met ons opneemt voor een vrijblijvende afspraak, zullen wij u onder het genot van een kopje koffie of thee graag adviseren bij de mogelijkheden in en rondom uw woning. Dit om een meer persoonlijke uitstraling aan uw huis te geven.</p>
-    
-    <h4>"Creëer uw eigen sfeer met de juiste touch"</h4>
-    
-    <p>Duiveman Wand en Plafondspuitbedrijf BV is benaderbaar voor de volgende diensten:</p>
-    
-    <ul>
-        <li><a href="{% url 'spuitwerk' %}">Spuitwerk</a></li>
-        <li><a href="{% url 'stucwerk' %}">Stucwerk</a></li>
-        <li><a href="{% url 'sierpleister' %}">Sierpleisterwerk</a></li>
-        <li><a href="{% url 'sauzen' %}">Sauzen</a></li>
-    </ul>
-    
+            <p>Indien u contact met ons opneemt voor een vrijblijvende afspraak, zullen wij u onder het genot van een kopje koffie of thee graag adviseren bij de mogelijkheden in en rondom uw woning. Dit om een meer persoonlijke uitstraling aan uw huis te geven.</p>
+            
+            <h3>"Creëer uw eigen sfeer met de juiste touch"</h3>
+            
+            <p>Duiveman Wand en Plafondspuitbedrijf BV is benaderbaar voor de volgende diensten:</p>
+            
+            <ul>
+                <li><a href="{% url 'spuitwerk' %}">Spuitwerk</a></li>
+                <li><a href="{% url 'stucwerk' %}">Stucwerk</a></li>
+                <li><a href="{% url 'sierpleister' %}">Sierpleisterwerk</a></li>
+                <li><a href="{% url 'sauzen' %}">Sauzen</a></li>
+            </ul>
 
-    <p>Natuurlijk staan al onze diensten garant voor kwaliteit en hanteren wij een scherpe marktconforme prijs.</p>
+            <p>Natuurlijk staan al onze diensten garant voor kwaliteit en hanteren wij een scherpe marktconforme prijs.</p>
+        </div>
+    </main>
 {% endblock %}
 
 
