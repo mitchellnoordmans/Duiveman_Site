@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duiveman BV</title>
     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
     <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <a href="/" class="logo">
+        <img src="{% static 'images/logo-duiveman.png' %}" alt="Duiveman BV Logo">
+    </a>
     <!-- Add your CSS and JavaScript links here -->
 </head>
-
-{% block content%} BASE {% endblock %}
+{% block content %} BASE {% endblock %}
 <body>
-    <header>
-        <a href="/" class="logo">
-            <img src="{% static 'images/logo-duiveman.png' %}" alt="Duiveman BV Logo">
-        </a>
-        <nav>
+    <header class="nav-header">
+        <nav class="nav-menu">
             <ul>
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <li class="dropdown">
@@ -38,7 +38,6 @@
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>
-               
     </header>
 
     <!-- Add your footer here -->
@@ -53,6 +52,5 @@
             <a href="{% url 'disclaimer' %}">Disclaimer</a>
         </div>
     </footer>
-    
 </body>
 </html>
