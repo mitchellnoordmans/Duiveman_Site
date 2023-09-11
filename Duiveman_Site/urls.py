@@ -6,6 +6,9 @@ from core.views import ( home, diensten,
                          sierpleister, sauzen, lijstwerk, contact,
                           disclaimer, privacy, afbouw, muurschildering, overige_diensten )
 
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
@@ -24,3 +27,5 @@ urlpatterns = [
     path('overige_diensten/', overige_diensten, name='overige_diensten'),
 ]
 
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

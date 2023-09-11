@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duiveman BV</title>
+    {% load static %}
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
     <!-- Add your CSS and JavaScript links here -->
 </head>
 
 {% block content%} BASE {% endblock %}
 <body>
     <header>
-        <a href="/" class="logo">LOGO PLACEHOLDER</a>
+        <a href="/" class="logo">
+            <img src="{% static 'images/logo-duiveman.png' %}" alt="Duiveman BV Logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="{% url 'home' %}">Home</a></li>
